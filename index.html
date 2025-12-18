@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head> 
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">.   
+            <!-- name="viewport" Esta configuración es para controlar cómo la página se muestra en diferentes pantallas.
+                content="width=device-width" La página debe ajustarse al ancho REAL del dispositivo en el que se este viendo
+                initial-scale=1.0 La página debe empezar SIN zoom (tamaño normal) -->
+                
+            <title>Portafolio | [Andrea Lizcano]</title>
+
+            <link rel="stylesheet" href="styles.css">
+        </head>
+
+        <body>
+           
+            <div class="container"></div>
+
+            <header> ANDREA LIZCANO 
+                <nav>
+                    <ul>  <!-- con ul realizo una lista de enlaces como la que viene a continuacion son puntitos (desordenada) -->
+                        <li><a href="#About_me"> About me </a></li>   <!--  href es para decirle al navegador donde debe ir por ejemplo al lugar de la pagina donde dice about me  -->
+                        <li><a href="#Projects"> Projects </a></li>  
+                        <li><a href="#Contact"> Contact </a></li>
+                        <li><a href="pets.html"> Pets </a></li>  
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="hero-image">
+                <img src="img/Andrea_Lizcano.jpeg" alt="Foto portada ANDREA LIZCANO">
+            </div>
+
+            <section id="About_me">
+                <h4>About me </h4>
+                <p>Hi guys!  soy una chica sagitariana por ende soy fuego, soy intensa en mis proyectos y en mi vida personal, lo que me propongo lo cumplo a cavalidad, 
+                    he aprendido a recontruirme a través de cada experiencia, disfruto reinventarme y a diario construyo una vida que se parezca a la mujer que soy; 
+                    LIBRE, curiosa, en constante movimiento y evolucion. </p>
+
+                <p>Aqui encontraras una persona apasionada por crear, y esa pasión me llevó a estudiar desarrollo de software.
+                    Me encanta entender cómo funcionan las cosas y transformarlas en soluciones útiles. Ya tengo conocimiento en Python y actualmente estoy aprendiendo HTML y CSS,
+                    lo que me permite construir mis primeras estructuras web. </p>
+
+                <p>En este momento también estudio inglés, porque sé que dominar este idioma me abrirá más oportunidades laborales y profesionales. Quiero expandir mis posibilidades,
+                    conectar con personas de otros países y tener acceso a proyectos que impulsen mi crecimiento. </p>
+
+                <p>Además, estoy en proceso de culminar mis estudios como Comunicadora Social. Esta formación me ha ayudado a fortalecer mis habilidades de comunicación, análisis y creatividad, 
+                cualidades que también enriquecen mi camino como desarrolladora.. </p>
+
+                <p>Además, estoy en proceso de culminar mis estudios como Comunicadora Social. Esta formación me ha ayudado a fortalecer mis habilidades de comunicación, análisis y creatividad, 
+                cualidades que también enriquecen mi camino como desarrolladora. </p>
+
+            </section>
+
+            <section id= "Projects">
+                <h4> Projects </h4> 
+                
+                    <li>
+                        <a href="https://github.com/sirenitamagnetica?tab=repositories" target="_blank"> <!-- target blannk es para que al hacer click se haga en una ventana nueva -->
+                                Redirección repositorio Github 
+                        </a>
+                    </li>
+                
+
+            </section>
+
+
+            <section id= "contact"> 
+                <h4> Contact </h4>
+                <ul>
+                    <li>
+                        <p>
+                            <a href = "mailto:andrealizcano2023@gmail.com" > <!-- mailto es un protocolo para abrir mensajerria gmail outlook apple mail etc. -->
+                                Redireccion a correo electronico para consulta.
+                            </a>  
+                        </p> 
+                </ul></li>
+                        
+                
+                <ul>
+                    <li>
+                        <p>
+                            <a href = "https://wa.me/573001234567" target="_blank">
+                            Contactame por whatsapp. 
+                            </a>
+                        </p>
+
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <p>
+                            <a href="https://www.instagram.com/user.daeeeeeee/" target="_blank">
+                                Instagram: Conoce un poco mas sobre mi. 
+                            </a>
+                        </p>
+                    </li>
+
+            <section>
+
+                            <!-- SECCION DE CONTACTO -->
+                <!-- IMPORTANTE: aquí usamos id="contact" (para el enlace del menú)
+                    y class="contact-section" (para que el CSS se aplique) -->
+                
+                    <section id="Contact" class="contact-section">
+                
+                    <h3>¿Te gustaria ser contactado?</h3>
+
+                    <form class="contact-form">
+
+                    <!-- class="field-row" hace que los dos campos se organicen en una fila usando Flexbox -->
+                    <div class="field-row">
+
+                        <div class="field-group">
+                            <label for="nombre">Tu Nombre:</label>
+                            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+                        </div>
+                        <!--placeholder es un texto temporal dentro de un <input> que le da una pista al usuario sobre qué debe escribir. -->
+                        
+                        <div 
+                            class="field-group">
+                            <label for="telefono">Numero de telefono:</label>
+                            <input type="tel" id="telefono" placeholder="Ingrese su numero de telefono">
+                        </div>    
+
+                        <h4>¿Como te gustaria ser contactado?</h4>
+
+                        <!-- Opciones de contacto: aquí usamos class="contact-options" -->
+                        <div class="contact-options">
+                        <!-- Opción llamada -->
+                        
+                        <label>
+                            <span class="contact-icon">📞</span>
+                            <input type="radio" name="metodo_contacto" value="llamada">
+                            Llamarme por teléfono
+                        </label>
+
+                        <!-- Opción WhatsApp -->
+                        <label>
+                            <span class="contact-icon">💬</span>
+                            <input type="radio" name="metodo_contacto" value="whatsapp">
+                            Escribirme por WhatsApp
+                        </label>
+                    </div>
+
+            <!-- Botón grande abajo: class="contact-button" -->
+            <button type="submit" class="contact-button">
+                Enviar solicitud
+            </button>
+
+        </form>
+    </section>
+
+
+
+
+            
+                
+
+            
+
+            
+
+
+        </body>
+
+    </html>
+
+
+    
+            
+            
+        

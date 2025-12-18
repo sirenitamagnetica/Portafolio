@@ -1,0 +1,489 @@
+
+
+* {
+    margin: 0;               /* Quita TODOS los márgenes por defecto */
+    padding: 0;              /* Quita TODOS los rellenos por defecto */
+    box-sizing: border-box;  /* Hace que width/height incluyan padding y border */
+}
+
+
+/* ========== ESTILO GENERAL DEL BODY ========== */
+
+body {
+    font-family:'Courier New', Courier, monospace;  /* Fuente general de la página */
+    background-color: #f8f1f8;       /* Fondo suave lila muy claro */
+    color: #33001a;                  /* Texto vinotinto por defecto */
+}
+
+
+/* ========== HEADER (BARRA SUPERIOR) ========== */
+
+header {
+    /* 1. Convierto el header en un contenedor flexible */
+    display: flex;                /* Pone "ANDREA LIZCANO" y el <nav> en una FILA horizontal */
+
+    /* 2. Alineación */
+    align-items: center;          /* Centra “ANDREA LIZCANO” y el menú verticalmente en la misma línea */
+    justify-content: space-between; 
+                                  /* Deja “ANDREA LIZCANO” a la izquierda y el nav a la derecha */
+
+    /* 3. Espacios internos del header */
+    padding: 20px 60px;           /* 20px arriba/abajo, 60px izquierda/derecha */
+
+    /* 4. Colores del header */
+    background-color: #f8f1f8;    /* Fondo rosita para el header */
+    color: #33001a;               /* Texto vinotinto dentro del header */
+
+    /* 5. Estilo del texto del header (incluye ANDREA LIZCANO) */
+    font-size: 80px;              /* Hace “ANDREA LIZCANO” más grande */
+    font-weight: 900;             /* Lo pone en negrita fuerte (marca personal) */
+}
+
+/* ========== IMAGEN DE PORTADA ========== */
+
+.hero-image {
+    width: 100%;                 /* Ocupa todo el ancho disponible */
+    display: flex;               /* Permite centrar la imagen */
+    justify-content: center;     /* Centra horizontalmente */
+    margin: 5px 0;              /* Espacio arriba y abajo */
+}
+
+.hero-image img {
+    width: 85%;                  /* Controla el tamaño visible de la imagen */
+    max-width: 1200px;           /* Evita que sea demasiado grande */
+    border-radius: 20px;         /* Bordes suaves y elegantes */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25); /* Sombra profesional */
+    display: block;              /* Evita espacios raros debajo */
+}
+
+
+/* ========== CONTENEDOR GENERAL PARA CENTRAR TODO EL CONTENIDO ========== */
+
+.container {
+    max-width: 20px;     /* Ancho máximo del contenido (ajústalo si quieres más o menos ancho) */
+    margin: 0 auto;        /* Centra el contenido horizontalmente */
+    padding: 20px;         /* Espacio interno para que no pegue a los bordes */
+}
+
+
+
+/* ========== MENÚ DE NAVEGACIÓN DENTRO DEL HEADER ========== */
+
+/* Lista <ul> del nav */
+header nav ul {
+    list-style: none;             /* Quita los puntos de la lista (<ul>) */
+
+    display: flex;                /* Pone los <li> en fila horizontal (uno al lado del otro) */
+    gap: 40px;                    /* Espacio horizontal entre cada opción del menú */
+}
+
+/* Cada enlace (<a>) del menú */
+header nav a {
+    color: #33001a;               /* Color vino para el texto del menú */
+    text-decoration: none;        /* Quitamos el subrayado de los links */
+    font-size: 18px;              /* TAMAÑO DEL TEXTO DEL MENÚ (más pequeño que el nombre) */
+    font-weight: 400;             /* Peso normal para que no compita con “ANDREA LIZCANO” */
+}
+
+/* Efecto al pasar el mouse por encima del menú */
+header nav a:hover {
+    color: #f3c26a;               /* Dorado suave en hover */
+}
+
+/* ========= CONTENIDO CENTRAL DE LA PÁGINA ========= */
+
+/* Aplica a todas tus secciones: About me, Projects, Contact, etc. */
+section {
+    max-width: 900px;        /* 1. Máximo ancho del bloque de contenido (ajusta si quieres más o menos) */
+    margin: 40px auto;       /* 2. Centra la sección horizontalmente y deja 40px arriba/abajo */
+    padding: 20px;           /* 3. Espacio interno para que el texto no pegue a los bordes de la sección */
+
+    background-color: #ffffff; /* 4. Fondo blanco para que se note la “tarjeta” centrada */
+    border-radius: 8px;        /* 5. Bordes redondeados suaves */
+    box-shadow: 0 2px 6px rgba(73, 46, 17, 0.491); /* 6. Sombra ligera para destacar las secciones */
+}
+
+/* Párrafos dentro de las secciones: mejor lectura */
+section p {
+    line-height: 1.5;       /* 7. Espacio entre líneas para que se lea más cómodo */
+    margin-bottom: 10px;    /* 8. Espacio entre párrafos */
+}
+
+
+section h4 {                 /* About me espacio entre el texto */
+    margin-bottom: 25px;     /* Aumenta el espacio debajo del título */
+}
+
+
+/* ========== TARJETA DE CONTACTO (FONDO VINOTINTO) ========== */
+
+.contact-section {
+    max-width: 900px;                 /* Ancho elegante */
+    margin: 80px auto;                /* Gran espacio arriba y centrado */
+    padding: 50px 60px;               /* Mucho relleno interno, estilo premium */
+
+    background-color: #33001a;        /* Fondo vinotinto oscuro */
+    color: #f8f1f8;                   /* Texto crema claro */
+
+    border-radius: 20px;              /* Bordes redondeados suaves */
+    box-shadow: 0 10px 35px rgba(0,0,0,0.35); /* Sombra profunda y elegante */
+}
+
+/* TÍTULO PRINCIPAL */
+.contact-section h3 {
+    font-size: 34px; 
+    font-weight: 900;
+    margin-bottom: 35px;              /* Mucho espacio debajo */
+    color: #f8f1f8;
+}
+
+/* SUBTÍTULO */
+.contact-section h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 40px 0 20px 0;            /* Espaciado generoso */
+    color: #f8f1f8;
+}
+
+
+/* ========== FORMULARIO ========== */
+
+/* Fila con dos columnas: Nombre y Teléfono */
+/* Fila con dos columnas: Nombre y Teléfono */
+.field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    column-gap: 180px;              /* ESPACIO GRANDE ENTRE LAS LÍNEAS */
+    margin-bottom: 40px;
+}
+
+/* Etiquetas: "Your Nombre" y "Numero de telefono" */
+.field-row label {
+    display: block;                         /* Ocupa toda la línea arriba del input */
+    font-size: 20px;
+    font-weight: 700;
+    color: #f8f1f8;                         /* Texto crema */
+    margin-bottom: 20px;                    /* Espacio entre la etiqueta y la línea */
+}
+
+
+/* Inputs con solo línea inferior, estilo maqueta */
+.field-row input[type="text"],
+.field-row input[type="tel"] {
+    width: 100%;
+    background: transparent;                /* Se ve el fondo vinotinto */
+    border: none;                           /* Sin borde tradicional */
+    border-bottom: 2px solid #f8f1f8;       /* Solo línea inferior clara */
+    font-size: 18px;
+    color: #f8f1f8;                         /* Texto crema */
+    outline: none;                          /* Quita el contorno azul del navegador */
+}
+
+/* Placeholder suave en esos dos inputs */
+.field-row input::placeholder {
+    color: rgba(248, 241, 248, 0.55);       /* Mismo crema pero más suave */
+}
+
+/* ========== OPCIONES DE CONTACTO (Radios) ========== */
+
+
+/* Iconos 📞 💬 */
+.contact-icon {
+    font-size: 26px;
+}
+
+/* Color del circulito del radio */
+.contact-options input[type="radio"] {
+    accent-color: #f8f1f8;
+}
+
+
+/* ========== BOTÓN ENVIAR SOLICITUD ========== */
+
+.contact-button {
+    align-self: flex-end;
+    padding: 15px 50px;
+
+    background-color: #f8f1f8;        /* Botón claro para contraste */
+    color: #33001a;                   /* Texto vinotinto */
+    font-size: 20px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 100px;             /* Pastilla */
+    cursor: pointer;
+
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    transition: 0.25s ease;
+}
+
+/* Hover bonito */
+.contact-button:hover {
+    background-color: #ffbaba;        /* Dorado suave */
+    transform: translateY(-3px);      /* Se eleva */
+}
+
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 700px) {
+    .field-row {
+        grid-template-columns: 1fr;   /* Se vuelve una columna en móvil */
+    }
+
+    .contact-button {
+        align-self: center;           /* Botón centrado en pantalla pequeña */
+    }
+}
+
+.contact-options {
+    margin-top: 35px;   /* Este margen crea ESPACIO VERTICAL entre:
+                         1. La línea inferior del input del teléfono
+                         2. Y el bloque de opciones (📞 Llamarme / 💬 WhatsApp)
+
+                         Sin este margen, los radios e íconos quedan
+                         pegados visualmente a la línea, lo que hace
+                         que se vea desordenado o muy apretado.
+
+                         Este espacio extra da una separación limpia,
+                         elegante y mejora la lectura visual del formulario.
+                        */
+
+    display: flex;      /* Coloca las opciones una al lado de la otra */
+    flex-wrap: wrap;    /* Permite que bajen a otra línea si no caben */
+    gap: 30px;          /* Espacio HORIZONTAL entre las dos opciones */
+}
+
+
+
+
+
+
+
+
+
+/* ========== ESTILO GENERAL PARA LA PAGINA DE MASCOTAS ========== */
+
+/* Aplica a todo el body de mascotas.html si le pones class="pets-page" */
+.pets-page {
+    font-family: 'Courier New', Courier, monospace;  /* Misma fuente de tu portafolio */
+    background-color: #f8f1f8;       /* Fondo claro */
+    color: #33001a;                  /* Texto vino */
+    margin: 0;
+    padding: 0;
+}
+
+.pets-page header {
+    display: flex;                /* Pone el titulo PETS y el nav en fila */
+    justify-content: space-between; /* Titulo a la izquierda, menu a la derecha */
+    align-items: center;          /* Centra verticalmente */
+    padding: 20px 60px;           /* Espacio interno */
+    background-color: #f8f1f8;    /* Mismo fondo que el body */
+    color: #33001a;
+}
+
+/* Titulo grande "PETS" */
+.pets-page header h1,
+.pets-page header span {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+/* Lista del nav en mascotas */
+.pets-page header nav ul {
+    list-style: none;             /* Sin punticos */
+    display: flex;                /* En fila horizontal */
+    gap: 24px;                    /* Espacio entre opciones */
+    margin: 0;
+    padding: 0;
+}
+
+/* Enlaces del nav en mascotas */
+.pets-page header nav a {
+    text-decoration: none;        /* Sin subrayado */
+    color: #33001a;               /* Vino */
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* Efecto hover en nav */
+.pets-page header nav a:hover {
+    color: #a66b8b;               /* Vino mas claro al pasar el mouse */
+}
+
+
+section h2 {                 /* About me espacio entre el texto */
+    margin-bottom: 25px;     /* Aumenta el espacio debajo del título */
+}
+
+
+/* ========== GALERÍA TIPO PORTAFOLIO (GRID) ========== */
+
+
+#Gallery {
+  display: grid; 
+  /* display: grid activa el sistema de rejilla (columnas y filas) */
+
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  /* auto-fill crea tantas columnas como quepan
+     minmax(260px, 1fr) significa:
+     - mínimo 260px por columna
+     - si sobra espacio, se reparte en fracciones */
+
+  grid-auto-rows: 180px;
+  /* ESTA ES LA CLAVE DEL MOSAICO
+     define la "altura base" de una fila del grid
+     Piensa que el grid queda hecho de bloques de 180px de alto */
+
+  grid-auto-flow: dense;
+  /* dense = rellena huecos
+     Si un elemento grande deja un espacio, el navegador mete uno pequeño que quepa ahí */
+
+  x
+  max-width: 1400px;
+  /* para que la galería use más ancho de pantalla */
+
+  margin: 40px auto;
+  /* centra la galería y da espacio arriba y abajo */
+
+  padding: 0 40px;
+  /* aire a los lados */
+
+  background: transparent;
+  /* sin caja blanca */
+}
+
+/* El título GALLERY debe ocupar todo el ancho */
+#Gallery > h3 {
+  grid-column: 1 / -1;
+  /* se extiende desde la primera hasta la última columna */
+}
+
+/* Cada <article> debe poder "cortar" lo que se salga al hacer zoom 
+#Gallery > article {
+  overflow: ;
+  /* evita que al hacer hover la imagen se salga y se vea feo / ESTA COMENTADO PARA QUE LA IMAGEN MUESTRE EL TEXTO DESCRIPTIVO EL HIDDEN ME BORRA LA DESCRIPCION */
+
+#Gallery > article {
+  overflow: visible;     /* deja que el texto <p> se vea */
+  display: flex;         /* ordena imagen + texto */
+  flex-direction: column;/* imagen arriba, texto abajo */
+  gap: 12px;             /* espacio entre imagen y descripción */
+}
+
+/* Este “marco” solo afecta a la imagen, no al texto */
+#Gallery > article img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+
+  transform: scale(1);                 /* estado normal */
+  transition: transform 0.2s ease;     /* animación suave */
+
+  /* Clave: evita que el zoom se vea feo dentro del borde redondeado */
+  clip-path: inset(0 round 12px);
+  /* clip-path recorta SOLO la imagen, como si fuera una máscara */
+}
+
+/* Zoom sin salirse */
+#Gallery > article img:hover {
+  transform: scale(1.04);
+}
+
+/* Asegura que el texto siempre se vea */
+#Gallery > article p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+  border-radius: 16px;
+  /* borde redondeado estético */
+
+  background: transparent;
+  /* sin tarjeta blanca */
+}
+
+/* La imagen llena el article por completo */
+#Gallery img {
+  width: 100%;
+  height: 100%;
+  /* al usar height 100% la imagen se adapta al alto del bloque del grid */
+
+  object-fit: cover;
+  /* cover recorta sin deformar para llenar el espacio */
+
+  display: block;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  /* animación suave */
+}
+
+Gallery article p {
+  margin-top: 12px;     /* separación de la imagen */
+  font-size: 15px;      /* tamaño legible */
+  line-height: 1.4;     /* respiración del texto */
+  opacity: 0.85;        /* más suave visualmente */
+}
+
+/* =========================================
+   HACER ITEMS GRANDES SIN EDITAR EL HTML
+   Usamos :nth-of-type() sobre los <article>
+   ========================================= */
+
+/* ALTOS (como el 2 y el 11 del ejemplo): ocupan 2 filas */
+#Gallery > article:nth-of-type(2),
+#Gallery > article:nth-of-type(7) {
+  grid-row: span 2;
+  /* span 2 significa: este article ocupa 2 filas de 180px = 360px */
+}
+
+/* ANCHOS (como el 4 y el 9 del ejemplo): ocupan 2 columnas */
+#Gallery > article:nth-of-type(4),
+#Gallery > article:nth-of-type(9) {
+  grid-column: span 2;
+  /* span 2 significa: este article ocupa el ancho de 2 columnas */
+}
+
+/* GRANDE (como el 6 del ejemplo): ocupa 2 columnas y 2 filas */
+#Gallery > article:nth-of-type(6) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* =========================================
+   EFECTO RESALTAR
+   ========================================= */
+
+#Gallery img:hover {
+  transform: scale(1.05);
+  /* se agranda */
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+  /* resalta */
+}
+
+/* En móvil, el usuario no tiene hover. active funciona al presionar */
+#Gallery img:active {
+  transform: scale(1.05);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+}
+
+/* =========================================
+   RESPONSIVE: cuando el ancho es pequeño, 1 columna
+   ========================================= */
+
+@media (max-width: 800px) {
+  #Gallery {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 220px;
+    padding: 0 16px;
+  }
+}
+  /* En móvil, los spans de 2 columnas no tienen sentido porque solo hay 1 columna
+     Los “neutralizamos” para que no rompa el flujo */
+  #Gallery > article:nth-of-type(4),
+  #Gallery > article:nth-of-type(6),
+  #Gallery > article:nth-of-type(9) 
+  {
+    grid-column: span 1;
+  }
